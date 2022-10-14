@@ -14,6 +14,42 @@
         android:theme="@style/Theme.PI"
         tools:targetApi="31">
         <activity
+            android:name=".DetalheEventoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalheHistoricoItemAlunoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalheAlunoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalheNoticiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroItemHistoricoAlunoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroAlunoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroEventoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroNoticiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SobreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
