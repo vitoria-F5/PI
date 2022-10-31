@@ -7,31 +7,29 @@
     tools:context=".CadastroActivity">
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etEmailCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNomeCompleto" />
+        tools:layout_editor_absoluteY="279dp" />
 
     <EditText
-        android:id="@+id/etNomeCompleto"
+        android:id="@+id/etNomeCompletoCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
         android:ems="10"
         android:hint="Nome Completo"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailCadastro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTekohaCadastroALuno" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/etSiape"
+        android:id="@+id/etSiapeCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -39,7 +37,7 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+        tools:layout_editor_absoluteY="325dp" />
 
     <EditText
         android:id="@+id/etSenhaCadastro"
@@ -50,7 +48,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSiape" />
+        tools:layout_editor_absoluteY="366dp" />
 
     <EditText
         android:id="@+id/etSenhaCadastroNovamente"
@@ -61,10 +59,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSenhaCadastro" />
+        tools:layout_editor_absoluteY="405dp" />
 
     <Button
-        android:id="@+id/btnCadastrar"
+        android:id="@+id/btnCadastrarCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Cadastrar"
@@ -73,16 +71,25 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="502dp" />
 
-    <TextView
-        android:id="@+id/tvTekohaCadastroALuno"
+    <ImageView
+        android:id="@+id/ivForestCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif"
-        android:text="Tekoha"
-        android:textSize="34sp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_forest_24" />
+
+    <TextView
+        android:id="@+id/tvTekoaCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="TEKOA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivForestCadastro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

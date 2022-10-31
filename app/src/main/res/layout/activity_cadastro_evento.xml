@@ -31,6 +31,8 @@
         android:id="@+id/eTParaQuemCadastroEvento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="99dp"
         android:ems="10"
         android:hint="NÃO SABEMOS"
         android:inputType="textPersonName"
@@ -42,6 +44,8 @@
         android:id="@+id/etDataCadastroEvento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="98dp"
         android:ems="10"
         android:hint="Data"
         android:inputType="date"
@@ -59,5 +63,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTParaQuemCadastroEvento" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Descrição"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="293dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
