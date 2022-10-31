@@ -10,8 +10,8 @@
         android:id="@+id/tVTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="CADASTRAR EVENTO"
-        android:text="CADASTRAR EVENTO"
+        android:text="Cadastrar Evento"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="18dp" />
@@ -21,31 +21,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Tipo"
+        android:hint="Tipo de Evento"
         android:inputType="textPersonName"
-        android:text="Tipo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="92dp" />
-
-    <EditText
-        android:id="@+id/eTDataCadastroEvento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date"
-        android:text="Data"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="162dp" />
+        app:layout_constraintTop_toBottomOf="@+id/tVTitulo" />
 
     <EditText
         android:id="@+id/eTParaQuemCadastroEvento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="NÃO SABEMOS"
         android:inputType="textPersonName"
-        android:text="Para Quem"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="229dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataCadastroEvento" />
+
+    <EditText
+        android:id="@+id/etDataCadastroEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Data"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pTTipoCadastroEvento" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTParaQuemCadastroEvento" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
