@@ -7,18 +7,19 @@
     tools:context=".CadastroActivity">
 
     <EditText
-        android:id="@+id/etEmailCadastro"
+        android:id="@+id/etEmailCad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNomeCadastro" />
+        app:layout_constraintTop_toBottomOf="@+id/etNomeCad" />
 
     <EditText
-        android:id="@+id/etNomeCadastro"
+        android:id="@+id/etNomeCad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -31,47 +32,56 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTekohaCadastro" />
 
     <EditText
-        android:id="@+id/etSiapeCadastro"
+        android:id="@+id/etSiapeCad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="SIAPE"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmailCadastro" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmailCad" />
 
     <EditText
-        android:id="@+id/etSenhaCadastro"
-        android:layout_width="wrap_content"
+        android:id="@+id/etSenhaCad"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSiapeCadastro" />
+        app:layout_constraintTop_toBottomOf="@+id/etSiapeCad" />
 
     <EditText
-        android:id="@+id/etSenhaNovamenteCadastro"
-        android:layout_width="wrap_content"
+        android:id="@+id/etSenhaConfirmaCad"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Digite a senha novamente"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSenhaCadastro" />
+        app:layout_constraintTop_toBottomOf="@+id/etSenhaCad" />
 
     <Button
         android:id="@+id/btnCadastrarCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:hint="Cadastrar"
         android:textColorHint="#FDFDFD"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="502dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etSenhaConfirmaCad" />
 
     <TextView
         android:id="@+id/tvTekohaCadastro"
