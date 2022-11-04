@@ -7,7 +7,7 @@
     tools:context=".CadastroEventoActivity">
 
     <TextView
-        android:id="@+id/tvCadastrarEvento"
+        android:id="@+id/tvCadastrarEventoCadastroEvento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -15,31 +15,9 @@
         android:text="Cadastrar Evento"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/etTipoCadastroEvento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:ems="10"
-        android:hint="Tipo de Evento"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCadastrarEvento" />
-
-    <EditText
-        android:id="@+id/eTParaQuemCadastroEvento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="NÃO SABEMOS"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDataCadastroEvento" />
 
     <EditText
         android:id="@+id/etDataCadastroEvento"
@@ -49,11 +27,12 @@
         android:hint="Data"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTipoCadastroEvento" />
 
     <EditText
-        android:id="@+id/etDescricaoEvento"
+        android:id="@+id/etDescricaoCadastroEvento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -61,11 +40,12 @@
         android:hint="Descrição do Evento"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eTParaQuemCadastroEvento" />
+        app:layout_constraintTop_toBottomOf="@+id/spParaCadastroEvento" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/bttCadastrarEvento"
+        android:id="@+id/btnCadastrarEventoCadastroEvento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -74,10 +54,32 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.997"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDescricaoEvento"
-        app:layout_constraintVertical_bias="0.969"
+        app:layout_constraintTop_toBottomOf="@+id/etDescricaoCadastroEvento"
+        app:layout_constraintVertical_bias="0.968"
         app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <Spinner
+        android:id="@+id/spParaCadastroEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataCadastroEvento" />
+
+    <EditText
+        android:id="@+id/etTipoCadastroEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Tipo de Evento"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCadastrarEventoCadastroEvento" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

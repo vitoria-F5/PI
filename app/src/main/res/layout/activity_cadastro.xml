@@ -7,7 +7,7 @@
     tools:context=".CadastroActivity">
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/etEmailCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -15,23 +15,23 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNomeCompleto" />
+        app:layout_constraintTop_toBottomOf="@+id/etNomeCadastro" />
 
     <EditText
-        android:id="@+id/etNomeCompleto"
+        android:id="@+id/etNomeCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Nome Completo"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTekohaCadastroALuno" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTekohaCadastro" />
 
     <EditText
-        android:id="@+id/etSiape"
+        android:id="@+id/etSiapeCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -39,7 +39,7 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmailCadastro" />
 
     <EditText
         android:id="@+id/etSenhaCadastro"
@@ -50,10 +50,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSiape" />
+        app:layout_constraintTop_toBottomOf="@+id/etSiapeCadastro" />
 
     <EditText
-        android:id="@+id/etSenhaCadastroNovamente"
+        android:id="@+id/etSenhaNovamenteCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etSenhaCadastro" />
 
     <Button
-        android:id="@+id/btnCadastrar"
+        android:id="@+id/btnCadastrarCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Cadastrar"
@@ -74,13 +74,14 @@
         tools:layout_editor_absoluteY="502dp" />
 
     <TextView
-        android:id="@+id/tvTekohaCadastroALuno"
+        android:id="@+id/tvTekohaCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif"
         android:text="Tekoha"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
