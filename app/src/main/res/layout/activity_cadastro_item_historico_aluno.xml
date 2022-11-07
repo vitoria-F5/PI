@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".CadastroItemHistoricoAlunoActivity">
 
+    <TextView
+        android:id="@+id/etHistoricoAlunoCadastroItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Afastamento"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/etDescricaoCadastroItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci velit, lacinia vitae eleifend a, placerat quis sapien. Mauris nulla tellus, tincidunt non malesuada id, auctor vitae turpis. Proin eu libero non elit hendrerit tincidunt non non ante. Phasellus lobortis suscipit mauris, eget pellentesque mauris euismod et. Cras euismod nisi vitae turpis eleifend laoreet. Donec vitae arcu sed ligula pulvinar suscipit ac eget augue. Vestibulum iaculis dignissim lacinia. Praesent scelerisque sem risus, nec dignissim ex commodo in.  "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHistoricoAlunoCadastroItem" />
+
+    <TextView
+        android:id="@+id/etDetalheCadastroItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Notícia postada por: Vitória Em: 13/10/2022 às 18h"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDescricaoCadastroItem" />
 </androidx.constraintlayout.widget.ConstraintLayout>
