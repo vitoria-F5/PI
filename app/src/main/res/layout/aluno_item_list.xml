@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/tvNomeAlunoItem"
+        android:id="@+id/etNomeAlunoItem"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvMatriculaAlunoItem"
+        android:id="@+id/etMatriculaAlunoItem"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -28,5 +28,5 @@
         android:text="Matrícula: 195339394"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNomeAlunoItem" />
+        app:layout_constraintTop_toBottomOf="@+id/etNomeAlunoItem" />
 </androidx.constraintlayout.widget.ConstraintLayout>

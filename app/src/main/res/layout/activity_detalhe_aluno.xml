@@ -7,7 +7,7 @@
     tools:context=".DetalheAlunoActivity">
 
     <TextView
-        android:id="@+id/etAlunoDetalheAluno"
+        android:id="@+id/tvAlunoDetalheAluno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -17,8 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/etMatriculaDetalheAluno"
+    <TextView
+        android:id="@+id/tvMatriculaDetalheAluno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -30,10 +30,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAlunoDetalheAluno" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAlunoDetalheAluno" />
 
-    <EditText
-        android:id="@+id/etEmailDetalheAluno"
+    <TextView
+        android:id="@+id/tvEmailDetalheAluno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -45,10 +45,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etMatriculaDetalheAluno" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMatriculaDetalheAluno" />
 
-    <EditText
-        android:id="@+id/etPhoneDetalheAluno"
+    <TextView
+        android:id="@+id/tvPhoneDetalheAluno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -60,19 +60,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmailDetalheAluno" />
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailDetalheAluno" />
 
     <TextView
-        android:id="@+id/etAssistenciaDetalheAluno"
+        android:id="@+id/tvAssistenciaDetalheAluno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="Recebe Assistência? Sim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneDetalheAluno" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPhoneDetalheAluno" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAssistenciaDetalheAluno" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
