@@ -1,14 +1,16 @@
-package kemile.larissa.pi;
+package kemile.larissa.pi.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class DetalheNoticiaActivity extends AppCompatActivity {
+import kemile.larissa.pi.R;
+
+public class CadastroEventoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalhe_noticia);
+        setContentView(R.layout.activity_cadastro_evento);
     }
 }

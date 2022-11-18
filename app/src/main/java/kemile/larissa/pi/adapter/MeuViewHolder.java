@@ -1,4 +1,4 @@
-package kemile.larissa.pi;
+package kemile.larissa.pi.adapter;
 
 import android.view.View;
 

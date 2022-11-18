@@ -1,26 +1,28 @@
-package kemile.larissa.pi;
+package kemile.larissa.pi.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.w3c.dom.Text;
-
 import java.util.List;
+
+import kemile.larissa.pi.activity.HomeActivity;
+import kemile.larissa.pi.model.Aluno;
+import kemile.larissa.pi.R;
+import kemile.larissa.pi.activity.MainActivity;
 
 public class AlunosAdapter extends RecyclerView.Adapter {
 
 
-    MainActivity mainActivity;
+    HomeActivity homeActivity;
     List<Aluno> alunos;
 
-    public AlunosAdapter(MainActivity mainActivity, List<Aluno> alunos) {
-        this.mainActivity = mainActivity;
+    public AlunosAdapter(HomeActivity homeActivity, List<Aluno> alunos) {
+        this.homeActivity = homeActivity;
         this.alunos = alunos;
     }
 
@@ -28,7 +30,7 @@ public class AlunosAdapter extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //Inflador = cria um elemento de interface referente a um objeto
-        LayoutInflater inflater = LayoutInflater.from(mainActivity);
+        LayoutInflater inflater = LayoutInflater.from(homeActivity);
         //constrói o item a partir do layout (.xml) definido
         View v = inflater.inflate(R.layout.aluno_item_list, parent, false);
         return new MeuViewHolder(v);
@@ -37,27 +39,29 @@ public class AlunosAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
-        //dados do item a ser preenchido
         Aluno item = alunos.get(position);
 
-        //view que estava guardada
         View v = holder.itemView;
-        //pegando os elementos de dentro da View v guardada pelo holder
         TextView tvAlunoDetalheAluno = v.findViewById(R.id.tvAlunoDetalheAluno);
         TextView tvMatriculaDetalheAluno = v.findViewById(R.id.tvMatriculaDetalheAluno);
-        //apagar e adicionar o certo que é aluno item
         TextView tvEmailDetalheAluno = v.findViewById(R.id.tvEmailDetalheAluno);
         TextView tvTelefoneDetalheAluno = v.findViewById(R.id.tvPhoneDetalheAluno);
         TextView tvAssistenciaDetalheAluno = v.findViewById(R.id.tvAssistenciaDetalheAluno);
 
-        //setando os elementos do item a ser criado com os dados de dentro da view
-        tvAlunoDetalheAluno.setText(item.nome);
-        tvMatriculaDetalheAluno.setText(item.matricula);
-        tvEmailDetalheAluno.setText(item.email);
-        tvTelefoneDetalheAluno.setInt(item.telefone); //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
-        tvAssistenciaDetalheAluno.setBoolean(item.assistencia); //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhh
+        tvAlunoDetalheAluno.setText("Nome: " + item.nome);
+        tvMatriculaDetalheAluno.setText("matricula: " + item.matricula);
+        tvEmailDetalheAluno.setText("Email: " + item.email);
+        tvTelefoneDetalheAluno.setText("Telefone: " + item.telefone);
+
+        if (item.assistencia) {
+            tvAssistenciaDetalheAluno.setText("Recebe assistência? Sim");
+        }
+        else {
+            tvAssistenciaDetalheAluno.setText("Recebe assistencia? Não");
+        }
 
         v.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
 

@@ -1,4 +1,4 @@
-package kemile.larissa.pi;
+package kemile.larissa.pi.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import kemile.larissa.pi.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -36,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
 
         //Dúvidas
         ImageView iconeSobre = findViewById(R.id.ivIconeLogin);
-        avancoCadastrese.setOnClickListener(new View.OnClickListener() {
+        iconeSobre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, SobreActivity.class);
@@ -45,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         TextView sigaiSobre = findViewById(R.id.etSigaiLogin);
-        avancoCadastrese.setOnClickListener(new View.OnClickListener() {
+        sigaiSobre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, SobreActivity.class);

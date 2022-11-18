@@ -1,4 +1,4 @@
-package kemile.larissa.pi;
+package kemile.larissa.pi.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 

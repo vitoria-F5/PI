@@ -1,8 +1,10 @@
-package kemile.larissa.pi;
+package kemile.larissa.pi.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import kemile.larissa.pi.R;
 
 public class CadastroItemHistoricoAlunoActivity extends AppCompatActivity {
 

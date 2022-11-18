@@ -1,24 +1,23 @@
-package kemile.larissa.pi;
+package kemile.larissa.pi.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class CadastroActivity extends AppCompatActivity {
+import kemile.larissa.pi.R;
 
-    private Button avancoCadastro;
+public class SobreActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro);
+        setContentView(R.layout.activity_sobre);
 
-        avancoCadastro = findViewById(R.id.btnCadastrarCadastro);
+        Button btnVoltarSobre = findViewById(R.id.btnVoltarSobre);
 
-        avancoCadastro.setOnClickListener(new View.OnClickListener() {
+        btnVoltarSobre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
