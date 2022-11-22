@@ -26,7 +26,7 @@ public class HomeViewModel extends AndroidViewModel {
         this.navigationOpSelected = navigationOpSelected;
     }
 
-    public List<Aluno> pegarListaAlunos() {
+    public List<Aluno> pegarListaAlunos(String aluno) {
         Aluno aluno1 = new Aluno("Jocelina", "202015546", "jojo@gmail.com", 55356753, true);
         Aluno aluno2 = new Aluno("Joao", "202015548", "jo@gmail.com", 553567543, false);
 
@@ -47,4 +47,5 @@ public class HomeViewModel extends AndroidViewModel {
 
         return noticias;
     }
+
 }

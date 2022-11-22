@@ -9,7 +9,6 @@ public class Aluno {
     public int telefone;
     public Boolean assistencia;
 
-
     // Construtor do item da lista
     public Aluno(String nome, String matricula, String email, int telefone, Boolean assistencia) {
         this.nome = nome;

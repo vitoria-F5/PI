@@ -8,7 +8,7 @@
     tools:context=".fragment.AlunosFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/rvAlunos"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/fabAdicionarAluno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -41,7 +41,7 @@
         tools:layout_editor_absoluteY="1dp">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/etBusca"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -50,7 +50,7 @@
             android:inputType="textPersonName" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/imbProcurar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.1"
