@@ -19,15 +19,11 @@ import android.widget.ImageButton;
 import java.util.List;
 
 import kemile.larissa.pi.R;
-import kemile.larissa.pi.activity.CadastroActivity;
 import kemile.larissa.pi.activity.CadastroAlunoActivity;
 import kemile.larissa.pi.activity.HomeActivity;
-import kemile.larissa.pi.activity.LoginActivity;
 import kemile.larissa.pi.adapter.AlunosAdapter;
-import kemile.larissa.pi.adapter.NoticiasAdapter;
 import kemile.larissa.pi.model.Aluno;
 import kemile.larissa.pi.model.HomeViewModel;
-import kemile.larissa.pi.model.Noticia;
 
 /**
  * A simple {@link Fragment} subclass.

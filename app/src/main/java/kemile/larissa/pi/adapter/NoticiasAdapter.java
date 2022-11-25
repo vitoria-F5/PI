@@ -12,15 +12,14 @@ import java.util.List;
 
 import kemile.larissa.pi.R;
 import kemile.larissa.pi.activity.HomeActivity;
-import kemile.larissa.pi.activity.MainActivity;
-import kemile.larissa.pi.model.Noticia;
+import kemile.larissa.pi.model.Evento;
 
 public class NoticiasAdapter extends RecyclerView.Adapter {
 
     HomeActivity homeActivity;
-    List<Noticia> noticias;
+    List<Evento> noticias;
 
-    public NoticiasAdapter(HomeActivity homeActivity, List<Noticia> noticias) {
+    public NoticiasAdapter(HomeActivity homeActivity, List<Evento> noticias) {
             this.homeActivity = homeActivity;
             this.noticias = noticias;
     }
@@ -38,7 +37,7 @@ public class NoticiasAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
-        Noticia item = noticias.get(position);
+        Evento item = noticias.get(position);
 
         View v = holder.itemView;
         TextView tvNoticiaItem = v.findViewById(R.id.tvNoticiaItem);

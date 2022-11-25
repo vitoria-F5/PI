@@ -19,7 +19,7 @@ import kemile.larissa.pi.R;
 import kemile.larissa.pi.activity.HomeActivity;
 import kemile.larissa.pi.adapter.NoticiasAdapter;
 import kemile.larissa.pi.model.HomeViewModel;
-import kemile.larissa.pi.model.Noticia;
+import kemile.larissa.pi.model.Evento;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,7 +60,7 @@ public class NoticiasFragment extends Fragment {
 
         HomeViewModel homeViewModel = new ViewModelProvider(getActivity()).get(HomeViewModel.class);
 
-        List<Noticia> noticias = homeViewModel.pegarListaNoticias();
+        List<Evento> noticias = homeViewModel.pegarListaEvento();
 
         HomeActivity homeActivity = (HomeActivity) getActivity().getParent();
 

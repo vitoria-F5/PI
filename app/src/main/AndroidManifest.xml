@@ -23,9 +23,6 @@
             android:name=".activity.DetalheAlunoActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.DetalheNoticiaActivity"
-            android:exported="false" />
-        <activity
             android:name=".activity.CadastroItemHistoricoAlunoActivity"
             android:exported="false" />
         <activity
@@ -33,9 +30,6 @@
             android:exported="false" />
         <activity
             android:name=".activity.CadastroEventoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.CadastroNoticiaActivity"
             android:exported="false" />
         <activity
             android:name=".activity.HomeActivity"

@@ -37,11 +37,11 @@ public class HomeViewModel extends AndroidViewModel {
         return alunos;
     }
 
-    public List<Noticia> pegarListaNoticias() {
-        Noticia noticia1 = new Noticia("Crânio decepado", "Aluno foi atingido por um meteoro", "Renata", "12/12/2012");
-        Noticia noticia2 = new Noticia("Virou um cavalo marinho", "Aluno se transformou em um cavalo marinho durante uma aula de geometria analítica", "Scopel", "12/12/2012");
+    public List<Evento> pegarListaEvento() {
+        Evento noticia1 = new Evento("Crânio decepado", "Aluno foi atingido por um meteoro", "Renata", "12/12/2012");
+        Evento noticia2 = new Evento("Virou um cavalo marinho", "Aluno se transformou em um cavalo marinho durante uma aula de geometria analítica", "Scopel", "12/12/2012");
 
-        List<Noticia> noticias = new ArrayList<>();
+        List<Evento> noticias = new ArrayList<>();
         noticias.add(noticia1);
         noticias.add(noticia2);
 

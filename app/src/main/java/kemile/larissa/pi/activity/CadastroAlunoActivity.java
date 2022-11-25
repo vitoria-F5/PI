@@ -78,6 +78,8 @@ public class CadastroAlunoActivity extends AppCompatActivity {
                     v.setEnabled(true);
                     return;
                 }
+                v.setEnabled(true);
+                finish();
             }
         });
     }
