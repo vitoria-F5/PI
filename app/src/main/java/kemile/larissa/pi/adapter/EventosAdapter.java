@@ -14,14 +14,14 @@ import kemile.larissa.pi.R;
 import kemile.larissa.pi.activity.HomeActivity;
 import kemile.larissa.pi.model.Evento;
 
-public class NoticiasAdapter extends RecyclerView.Adapter {
+public class EventosAdapter extends RecyclerView.Adapter {
 
     HomeActivity homeActivity;
-    List<Evento> noticias;
+    List<Evento> eventos;
 
-    public NoticiasAdapter(HomeActivity homeActivity, List<Evento> noticias) {
+    public EventosAdapter(HomeActivity homeActivity, List<Evento> noticias) {
             this.homeActivity = homeActivity;
-            this.noticias = noticias;
+            this.eventos = noticias;
     }
 
     @NonNull
@@ -30,14 +30,14 @@ public class NoticiasAdapter extends RecyclerView.Adapter {
         //Inflador = cria um elemento de interface referente a um objeto
         LayoutInflater inflater = LayoutInflater.from(homeActivity);
         //constrói o item a partir do layout (.xml) definido
-        View v = inflater.inflate(R.layout.noticia_item_list, parent, false);
+        View v = inflater.inflate(R.layout.eventos_item_list, parent, false);
         return new MeuViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
-        Evento item = noticias.get(position);
+        Evento item = eventos.get(position);
 
         View v = holder.itemView;
         TextView tvNoticiaItem = v.findViewById(R.id.tvNoticiaItem);
@@ -62,6 +62,6 @@ public class NoticiasAdapter extends RecyclerView.Adapter {
     @Override
     //retorna o total de itens atual
     public int getItemCount() {
-        return noticias.size();
+        return eventos.size();
     }
 }

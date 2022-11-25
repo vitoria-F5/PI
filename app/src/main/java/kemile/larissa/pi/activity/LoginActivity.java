@@ -36,7 +36,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        //Dúvidas
         ImageView iconeSobre = findViewById(R.id.ivIconeLogin);
         iconeSobre.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,5 +53,6 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

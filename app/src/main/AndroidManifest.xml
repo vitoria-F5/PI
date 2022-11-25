@@ -39,9 +39,11 @@
             android:exported="false" />
         <activity
             android:name=".activity.CadastroActivity"
+            android:theme="@style/Theme.PINoActionBar"
             android:exported="false" />
         <activity
             android:name=".activity.LoginActivity"
+            android:theme="@style/Theme.PINoActionBar"
             android:exported="false" />
         <activity
             android:name=".activity.MainActivity"

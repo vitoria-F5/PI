@@ -13,7 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 import kemile.larissa.pi.R;
-import kemile.larissa.pi.fragment.NoticiasFragment;
+import kemile.larissa.pi.fragment.EventosFragment;
 import kemile.larissa.pi.model.HomeViewModel;
 
 public class HomeActivity extends AppCompatActivity {
@@ -35,7 +35,7 @@ public class HomeActivity extends AppCompatActivity {
                 vm.setNavigationOpSelected(item.getItemId());
                 switch (item.getItemId()) {
                     case R.id.noticiasOp:
-                        NoticiasFragment noticiasFragment = NoticiasFragment.newInstance();
+                        EventosFragment noticiasFragment = EventosFragment.newInstance();
                         setFragment(noticiasFragment);
                         vm.setNavigationOpSelected(R.id.noticiasOp);
                         break;

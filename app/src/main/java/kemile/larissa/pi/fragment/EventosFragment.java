@@ -17,18 +17,18 @@ import java.util.List;
 
 import kemile.larissa.pi.R;
 import kemile.larissa.pi.activity.HomeActivity;
-import kemile.larissa.pi.adapter.NoticiasAdapter;
+import kemile.larissa.pi.adapter.EventosAdapter;
 import kemile.larissa.pi.model.HomeViewModel;
 import kemile.larissa.pi.model.Evento;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link NoticiasFragment#newInstance} factory method to
+ * Use the {@link EventosFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class NoticiasFragment extends Fragment {
+public class EventosFragment extends Fragment {
 
-    public NoticiasFragment() {
+    public EventosFragment() {
         // Required empty public constructor
     }
 
@@ -37,8 +37,8 @@ public class NoticiasFragment extends Fragment {
      * this fragment using the provided parameters.
 
      */
-    public static NoticiasFragment newInstance() {
-        NoticiasFragment fragment = new NoticiasFragment();
+    public static EventosFragment newInstance() {
+        EventosFragment fragment = new EventosFragment();
         return fragment;
     }
 
@@ -51,7 +51,7 @@ public class NoticiasFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_noticias, container, false);
+        return inflater.inflate(R.layout.fragment_eventos, container, false);
     }
 
     @Override
@@ -64,7 +64,7 @@ public class NoticiasFragment extends Fragment {
 
         HomeActivity homeActivity = (HomeActivity) getActivity().getParent();
 
-        NoticiasAdapter noticiasAdapter = new NoticiasAdapter(homeActivity,noticias);
+        EventosAdapter noticiasAdapter = new EventosAdapter(homeActivity,noticias);
 
         RecyclerView rvNoticias = view.findViewById(R.id.rvNoticias);
         rvNoticias.setLayoutManager(new LinearLayoutManager(getContext()));
