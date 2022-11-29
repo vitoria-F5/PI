@@ -68,7 +68,7 @@ public class AlunosFragment extends Fragment {
 
         List<Aluno> alunos = homeViewModel.pegarListaAlunos("");
 
-        HomeActivity homeActivity = (HomeActivity) getActivity().getParent();
+        HomeActivity homeActivity = (HomeActivity) getActivity();
 
         AlunosAdapter alunosAdapter = new AlunosAdapter(homeActivity,alunos);
 

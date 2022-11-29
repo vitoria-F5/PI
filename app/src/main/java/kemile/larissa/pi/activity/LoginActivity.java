@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
+//import android.widget.TextView;
 
 import kemile.larissa.pi.R;
 
@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        /*
         TextView sigaiSobre = findViewById(R.id.etSigaiLogin);
         sigaiSobre.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+         */
 
     }
 }

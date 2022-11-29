@@ -62,7 +62,7 @@ public class EventosFragment extends Fragment {
 
         List<Evento> noticias = homeViewModel.pegarListaEvento();
 
-        HomeActivity homeActivity = (HomeActivity) getActivity().getParent();
+        HomeActivity homeActivity = (HomeActivity) getActivity();
 
         EventosAdapter noticiasAdapter = new EventosAdapter(homeActivity,noticias);
 

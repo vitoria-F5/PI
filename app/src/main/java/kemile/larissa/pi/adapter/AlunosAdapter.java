@@ -42,29 +42,17 @@ public class AlunosAdapter extends RecyclerView.Adapter {
         Aluno item = alunos.get(position);
 
         View v = holder.itemView;
-        TextView tvAlunoDetalheAluno = v.findViewById(R.id.tvAlunoDetalheAluno);
-        TextView tvMatriculaDetalheAluno = v.findViewById(R.id.tvMatriculaDetalheAluno);
-        TextView tvEmailDetalheAluno = v.findViewById(R.id.tvEmailDetalheAluno);
-        TextView tvTelefoneDetalheAluno = v.findViewById(R.id.tvPhoneDetalheAluno);
-        TextView tvAssistenciaDetalheAluno = v.findViewById(R.id.tvAssistenciaDetalheAluno);
+        TextView tvAlunoDetalheAluno = v.findViewById(R.id.etNomeAlunoItem);
+        TextView tvMatriculaDetalheAluno = v.findViewById(R.id.etMatriculaAlunoItem);
 
         tvAlunoDetalheAluno.setText("Nome: " + item.nome);
         tvMatriculaDetalheAluno.setText("matricula: " + item.matricula);
-        tvEmailDetalheAluno.setText("Email: " + item.email);
-        tvTelefoneDetalheAluno.setText("Telefone: " + item.telefone);
-
-        if (item.assistencia) {
-            tvAssistenciaDetalheAluno.setText("Recebe assistência? Sim");
-        }
-        else {
-            tvAssistenciaDetalheAluno.setText("Recebe assistencia? Não");
-        }
 
         v.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-
+                homeActivity.navegarDetalhesAluno(item.matricula);
             }
         });
     }

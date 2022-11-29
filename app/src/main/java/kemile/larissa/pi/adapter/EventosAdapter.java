@@ -54,7 +54,7 @@ public class EventosAdapter extends RecyclerView.Adapter {
 
             @Override
             public void onClick(View view) {
-
+                homeActivity.navegarDetalhesEvento(item.id);
             }
         });
     }

@@ -38,8 +38,8 @@ public class HomeViewModel extends AndroidViewModel {
     }
 
     public List<Evento> pegarListaEvento() {
-        Evento noticia1 = new Evento("Crânio decepado", "Aluno foi atingido por um meteoro", "Renata", "12/12/2012");
-        Evento noticia2 = new Evento("Virou um cavalo marinho", "Aluno se transformou em um cavalo marinho durante uma aula de geometria analítica", "Scopel", "12/12/2012");
+        Evento noticia1 = new Evento("0","Crânio decepado", "Aluno foi atingido por um meteoro", "Renata", "12/12/2012");
+        Evento noticia2 = new Evento("1", "Virou um cavalo marinho", "Aluno se transformou em um cavalo marinho durante uma aula de geometria analítica", "Scopel", "12/12/2012");
 
         List<Evento> noticias = new ArrayList<>();
         noticias.add(noticia1);

@@ -11,13 +11,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         boolean login = false;
+        Intent intent;
         if (login) {
-            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-            startActivity(intent);
+            intent = new Intent(MainActivity.this, HomeActivity.class);
         }
         else {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            startActivity(intent);
+            intent = new Intent(MainActivity.this, LoginActivity.class);
         }
+        startActivity(intent);
+        finish();
     }
 }
