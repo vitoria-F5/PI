@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import kemile.larissa.pi.R;
@@ -47,37 +48,17 @@ public class CadastroAlunoActivity extends AppCompatActivity {
                     return;
                 }
 
-                EditText email = findViewById(R.id.etEmailCadastro);
-                String emmail = email.getText().toString();
-                if (emmail.isEmpty()) {
-                    Toast.makeText(CadastroAlunoActivity.this, "O campo Email do Aluno não foi preenchido", Toast.LENGTH_LONG).show();
-                    v.setEnabled(true);
-                    return;
-                }
-
-                EditText telefone = findViewById(R.id.etPhoneCadastrarAluno);
-                String telefonee = telefone.getText().toString();
-                if (telefonee.isEmpty()) {
-                    Toast.makeText(CadastroAlunoActivity.this, "O campo telefone do Aluno não foi preenchido", Toast.LENGTH_LONG).show();
-                    v.setEnabled(true);
-                    return;
-                }
-
-                EditText etnia = findViewById(R.id.etEtniaCadastrarAluno);
-                String raca = etnia.getText().toString();
-                if (emmail.isEmpty()) {
-                    Toast.makeText(CadastroAlunoActivity.this, "O campo etnia do Aluno não foi preenchido", Toast.LENGTH_LONG).show();
+                Spinner spEtnia = findViewById(R.id.spEtniaCadastroAluno);
+                int etnia = spEtnia.getSelectedItemPosition();
+                if (etnia == 0) {
+                    Toast.makeText(CadastroAlunoActivity.this, "O campo etnia do Aluno não foi escolhido", Toast.LENGTH_LONG).show();
                     v.setEnabled(true);
                     return;
                 }
 
                 CheckBox assistencia = findViewById(R.id.cbBolsaCadastrarAluno);
-                String estudantil = assistencia.getText().toString();
-                if (estudantil.isEmpty()) {
-                    Toast.makeText(CadastroAlunoActivity.this, "O campo assistencia do Aluno não foi preenchido", Toast.LENGTH_LONG).show();
-                    v.setEnabled(true);
-                    return;
-                }
+                Boolean estudantil = assistencia.isChecked();
+
                 v.setEnabled(true);
                 finish();
             }

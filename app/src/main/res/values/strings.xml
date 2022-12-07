@@ -3,12 +3,28 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string-array name="planets_array">
+    <string-array name="noticias_array">
         <item>Todos</item>
         <item>Notícias</item>
         <item>Notícias Públicas</item>
         <item>Notícias Privadas</item>
         <item>Eventos</item>
+    </string-array>
+
+    <string-array name="renda_array">
+        <item>Renda</item>
+        <item>Até um salário</item>
+        <item>De um a dois salários</item>
+        <item>De dois a três salários</item>
+    </string-array>
+
+    <string-array name="etnia_array">
+        <item>Etnia</item>
+        <item>Pardo</item>
+        <item>Preto</item>
+        <item>branco</item>
+        <item>indígena</item>
+        <item>amarela</item>
     </string-array>
 
 </resources>
